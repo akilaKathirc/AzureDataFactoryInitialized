@@ -1,0 +1,9 @@
+{
+	"name": "akilaazureadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4ff63bdc-30db-4ef5-9c7c-6cfeedfe4b81",
+		"tenantId": "288ffd2c-f09c-4154-ad8e-9c674ebe9dfa"
+	}
+}
