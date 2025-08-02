@@ -59,7 +59,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "pipeline1",
+									"referenceName": "childpipelineforeachuntil",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true,
