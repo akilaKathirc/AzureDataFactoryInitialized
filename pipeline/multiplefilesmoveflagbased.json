@@ -62,7 +62,13 @@
 									"referenceName": "pipeline1",
 									"type": "PipelineReference"
 								},
-								"waitOnCompletion": true
+								"waitOnCompletion": true,
+								"parameters": {
+									"FileName": {
+										"value": "@item().name",
+										"type": "Expression"
+									}
+								}
 							}
 						}
 					]
