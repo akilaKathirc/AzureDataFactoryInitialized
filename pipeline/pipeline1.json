@@ -12,80 +12,22 @@
 						"value": "@bool(variables('Flag'))",
 						"type": "Expression"
 					},
-					"timeout": "0.12:00:00"
-				}
-			},
-			{
-				"name": "Lookup1",
-				"type": "Lookup",
-				"dependsOn": [
-					{
-						"activity": "Until1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "SqlServerSource",
-						"sqlReaderQuery": {
-							"value": "select status from filestatus where FileName ='@{pipeline().parameters.FileName}'",
-							"type": "Expression"
-						},
-						"queryTimeout": "02:00:00",
-						"partitionOption": "None"
-					},
-					"dataset": {
-						"referenceName": "localmssql",
-						"type": "DatasetReference"
-					}
-				}
-			},
-			{
-				"name": "If Condition1",
-				"type": "IfCondition",
-				"dependsOn": [
-					{
-						"activity": "Lookup1",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
-				"userProperties": [],
-				"typeProperties": {
-					"expression": {
-						"value": "@equals(activity('Lookup1').output.firstRow.status,'Y')",
-						"type": "Expression"
-					},
-					"ifTrueActivities": [
+					"activities": [
 						{
-							"name": "Set variable1",
-							"type": "SetVariable",
+							"name": "Lookup1",
+							"type": "Lookup",
 							"dependsOn": [],
 							"policy": {
+								"timeout": "0.12:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "Flag",
-								"value": {
-									"value": "True",
-									"type": "Expression"
-								}
-							}
+							"userProperties": []
 						}
-					]
+					],
+					"timeout": "0.12:00:00"
 				}
 			}
 		],
