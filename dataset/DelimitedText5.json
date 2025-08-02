@@ -19,7 +19,10 @@
 					"value": "@dataset().Filename",
 					"type": "Expression"
 				},
-				"fileSystem": "multiplefileoutput"
+				"fileSystem": {
+					"value": "multiplefilesoutput",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
