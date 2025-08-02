@@ -24,7 +24,22 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "SqlServerSource",
+									"sqlReaderQuery": {
+										"value": "select status from filestatus where FileName = '@{pipeline().parameters.FileName}'",
+										"type": "Expression"
+									},
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
+								"dataset": {
+									"referenceName": "localmssql",
+									"type": "DatasetReference"
+								}
+							}
 						}
 					],
 					"timeout": "0.12:00:00"
