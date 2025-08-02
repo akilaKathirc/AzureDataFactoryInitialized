@@ -5,11 +5,20 @@
 			"referenceName": "multiplefileFlag",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"outputFileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().outputFileName",
+					"type": "Expression"
+				},
 				"fileSystem": "outputmultipleFiles"
 			},
 			"columnDelimiter": ",",

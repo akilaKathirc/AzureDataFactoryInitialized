@@ -150,7 +150,13 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText8",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"outputFileName": {
+								"value": "@pipeline().parameters.fillename",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
