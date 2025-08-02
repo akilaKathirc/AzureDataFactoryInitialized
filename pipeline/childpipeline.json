@@ -28,6 +28,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
+									"sqlReaderQuery": {
+										"value": "select status from filestatus ",
+										"type": "Expression"
+									},
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
@@ -42,6 +46,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"fillename": {
+				"type": "string"
+			}
+		},
 		"variables": {
 			"flagg": {
 				"type": "String",
