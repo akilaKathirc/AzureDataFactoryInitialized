@@ -8,6 +8,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@bool(variables('Flag'))",
+						"type": "Expression"
+					},
 					"activities": [
 						{
 							"name": "Lookup1",
