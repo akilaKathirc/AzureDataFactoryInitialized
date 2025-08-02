@@ -119,7 +119,13 @@
 				"inputs": [
 					{
 						"referenceName": "DelimitedText7",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"fffilename": {
+								"value": "@pipeline().parameters.fillename",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
