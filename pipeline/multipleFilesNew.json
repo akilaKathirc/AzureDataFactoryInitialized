@@ -58,6 +58,10 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"pipeline": {
+									"referenceName": "childpipeline",
+									"type": "PipelineReference"
+								},
 								"waitOnCompletion": true
 							}
 						}
