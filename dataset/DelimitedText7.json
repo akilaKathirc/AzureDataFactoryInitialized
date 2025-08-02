@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().fffilename",
+					"type": "Expression"
+				},
 				"fileSystem": "flagbasedmultiplefiles"
 			},
 			"columnDelimiter": ",",
