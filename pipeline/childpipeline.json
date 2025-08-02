@@ -13,8 +13,9 @@
 			}
 		],
 		"variables": {
-			"f": {
-				"type": "String"
+			"flagg": {
+				"type": "String",
+				"defaultValue": "False"
 			}
 		},
 		"annotations": []
