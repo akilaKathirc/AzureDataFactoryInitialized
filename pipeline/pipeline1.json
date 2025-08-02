@@ -144,7 +144,13 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText5",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Filename": {
+								"value": "@pipeline().parameters.FileName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
