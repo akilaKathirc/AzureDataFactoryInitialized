@@ -29,7 +29,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "select status from filestatus ",
+										"value": "select status from filestatus where FileName ='@{pipeline().parameters.fillename}'",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
