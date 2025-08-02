@@ -70,7 +70,10 @@
 										"userProperties": [],
 										"typeProperties": {
 											"variableName": "Flag",
-											"value": ""
+											"value": {
+												"value": "True",
+												"type": "Expression"
+											}
 										}
 									}
 								]
