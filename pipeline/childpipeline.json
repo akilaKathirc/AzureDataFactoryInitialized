@@ -168,8 +168,8 @@
 		},
 		"variables": {
 			"flagg": {
-				"type": "String",
-				"defaultValue": "True"
+				"type": "Boolean",
+				"defaultValue": "False"
 			}
 		},
 		"annotations": []
