@@ -133,12 +133,21 @@
 							"name": "Append variable1",
 							"type": "AppendVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "filenamess",
+								"value": ""
+							}
 						}
 					]
 				}
 			}
 		],
+		"variables": {
+			"filenamess": {
+				"type": "Array"
+			}
+		},
 		"annotations": []
 	}
 }
