@@ -66,7 +66,7 @@
 									"type": "DelimitedTextSource",
 									"additionalColumns": [
 										{
-											"name": "Filename",
+											"name": "Filenames",
 											"value": {
 												"value": "@item().name",
 												"type": "Expression"
@@ -96,30 +96,6 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
-									"mappings": [
-										{
-											"source": {
-												"type": "String",
-												"ordinal": 1
-											},
-											"sink": {
-												"name": "Column1",
-												"type": "String",
-												"physicalType": "String"
-											}
-										},
-										{
-											"source": {
-												"name": "Filename",
-												"type": "String"
-											},
-											"sink": {
-												"name": "Column2",
-												"type": "String",
-												"physicalType": "String"
-											}
-										}
-									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
