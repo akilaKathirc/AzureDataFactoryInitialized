@@ -150,7 +150,13 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText11",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@pipeline().parameters.FileName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
