@@ -46,6 +46,11 @@
 				}
 			}
 		],
+		"parameters": {
+			"FileName": {
+				"type": "string"
+			}
+		},
 		"variables": {
 			"Flag": {
 				"type": "String",
