@@ -1,0 +1,23 @@
+{
+	"name": "DelimitedText13",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageacclinkedserviceakila",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "fffilesnames.csv",
+				"fileSystem": "filesnamesfoldernew"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
