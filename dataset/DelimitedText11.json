@@ -16,7 +16,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "filename.csv",
+					"value": "@dataset().filename",
 					"type": "Expression"
 				},
 				"fileSystem": "adlsoutput"
