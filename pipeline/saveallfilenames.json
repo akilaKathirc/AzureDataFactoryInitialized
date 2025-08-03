@@ -68,7 +68,7 @@
 										{
 											"name": "Filenames",
 											"value": {
-												"value": "@item().name",
+												"value": "@item().value",
 												"type": "Expression"
 											}
 										}
@@ -124,7 +124,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "DelimitedText11",
+									"referenceName": "DelimitedText12",
 									"type": "DatasetReference"
 								}
 							]
