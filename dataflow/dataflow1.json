@@ -25,7 +25,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 derive() ~> derivedColumn1"
+				"source1 derive(Filenames1 = ERROR_FUNCTION('')) ~> derivedColumn1"
 			]
 		}
 	}
