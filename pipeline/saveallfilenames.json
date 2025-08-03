@@ -67,7 +67,10 @@
 									"additionalColumns": [
 										{
 											"name": "Filenames",
-											"value": "$$FILEPATH"
+											"value": {
+												"value": "@item().name",
+												"type": "Expression"
+											}
 										}
 									],
 									"storeSettings": {
