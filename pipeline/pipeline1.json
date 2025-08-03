@@ -8,6 +8,10 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@bool(variables('Flag'))",
+						"type": "Expression"
+					},
 					"timeout": "0.12:00:00"
 				}
 			}
