@@ -25,7 +25,7 @@
 				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
-				"source1 derive(Filenames1 = replace(replace(replace(Filenames1, '[', ''),']',''),'\"','')) ~> derivedColumn1"
+				"source1 derive(Filenames1 = split(replace(replace(replace(Filenames1, '[', ''),']',''),'\"',''), ',')) ~> derivedColumn1"
 			]
 		}
 	}
