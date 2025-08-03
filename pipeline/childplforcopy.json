@@ -169,7 +169,7 @@
 		"variables": {
 			"Flag": {
 				"type": "String",
-				"defaultValue": "False"
+				"defaultValue": "True"
 			}
 		},
 		"annotations": []
