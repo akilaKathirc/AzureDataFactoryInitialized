@@ -119,7 +119,13 @@
 				"inputs": [
 					{
 						"referenceName": "DelimitedText10",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"FileName": {
+								"value": "@pipeline().parameters.FileName",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
