@@ -19,7 +19,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
-				"fileSystem": "multiplefilescopyonstatuschange"
+				"fileSystem": "adlsoutput"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
