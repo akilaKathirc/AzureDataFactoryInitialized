@@ -91,19 +91,6 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
-									"mappings": [
-										{
-											"source": {
-												"type": "String",
-												"ordinal": 1
-											},
-											"sink": {
-												"name": "FileName",
-												"type": "String",
-												"physicalType": "varchar"
-											}
-										}
-									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
