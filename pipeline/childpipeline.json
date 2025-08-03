@@ -168,7 +168,7 @@
 		},
 		"variables": {
 			"flagg": {
-				"type": "Boolean",
+				"type": "String",
 				"defaultValue": "False"
 			}
 		},
