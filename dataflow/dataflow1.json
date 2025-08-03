@@ -29,7 +29,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 derive(Filenames1 = split(replace(replace(replace(Filenames1, '[', ''),']',''),'\"',''), ',')) ~> derivedColumn1",
-				"derivedColumn1 foldDown(unroll(),",
+				"derivedColumn1 foldDown(unroll(Filenames1),",
 				"     mapColumn(",
 				"          Filenames1",
 				"     ),",
