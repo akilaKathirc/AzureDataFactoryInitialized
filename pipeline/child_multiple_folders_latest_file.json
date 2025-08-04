@@ -231,7 +231,13 @@
 				"outputs": [
 					{
 						"referenceName": "DelimitedText28",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"FileNameforOutput": {
+								"value": "@variables('LatestFile')",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
