@@ -119,7 +119,7 @@
 										"typeProperties": {
 											"variableName": "refdate",
 											"value": {
-												"value": "@activity('Get Metadata1').output.lastModified",
+												"value": "@activity('Get Metadata2').output.lastModified",
 												"type": "Expression"
 											}
 										}
@@ -143,7 +143,7 @@
 										"typeProperties": {
 											"variableName": "latestfile",
 											"value": {
-												"value": "@activity('Get Metadata1').output.itemName",
+												"value": "@activity('Get Metadata2').output.itemName",
 												"type": "Expression"
 											}
 										}
