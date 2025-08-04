@@ -181,7 +181,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "if OBJECT_ID('dbo.lastthreefiles') is not null\ndrop table dbo.lastthreefiles",
+							"value": "if OBJECT_ID('dbo.lastthreefiles') is not null\ndrop table dbo.lastthreefiles;\nselect 1 as output",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
