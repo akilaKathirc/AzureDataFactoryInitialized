@@ -263,7 +263,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"FileName": {
-											"value": "@item().itemName",
+											"value": "@item().filename",
 											"type": "Expression"
 										}
 									}
