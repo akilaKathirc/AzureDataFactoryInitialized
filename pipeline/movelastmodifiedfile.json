@@ -88,7 +88,14 @@
 						{
 							"name": "If Condition1",
 							"type": "IfCondition",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "Get Metadata2",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
@@ -131,7 +138,10 @@
 										"userProperties": [],
 										"typeProperties": {
 											"variableName": "latestfile",
-											"value": ""
+											"value": {
+												"value": "@activity('Get Metadata1').output.itemName",
+												"type": "Expression"
+											}
 										}
 									}
 								]
