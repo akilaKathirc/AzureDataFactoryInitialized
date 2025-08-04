@@ -153,14 +153,14 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "select top 3 * from lastthreefiles order by modifiedDate desc",
+							"value": "select top 3 * from lastthreefiles order by modifiedDate desc;",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "SqlServerTable1",
+						"referenceName": "connecttolocalsql",
 						"type": "DatasetReference"
 					}
 				}
