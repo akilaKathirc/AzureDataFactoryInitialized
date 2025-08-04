@@ -69,6 +69,10 @@
 										"filename": {
 											"value": "@item().name",
 											"type": "Expression"
+										},
+										"lastmodified": {
+											"value": "@variables('refdate')",
+											"type": "Expression"
 										}
 									}
 								},

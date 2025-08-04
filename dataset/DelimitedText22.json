@@ -8,6 +8,9 @@
 		"parameters": {
 			"filename": {
 				"type": "string"
+			},
+			"lastmodified": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
