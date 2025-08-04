@@ -124,7 +124,10 @@
 										"userProperties": [],
 										"typeProperties": {
 											"variableName": "ReferenceDate",
-											"value": ""
+											"value": {
+												"value": "@activity('Get Metadata2').output.lastModified",
+												"type": "Expression"
+											}
 										}
 									}
 								]
