@@ -5,13 +5,13 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"server": "192.168.1.4,1433\\\\SQLEXPRESS",
+			"server": "192.168.1.2,1433\\\\SQLEXPRESS",
 			"database": "netflix",
 			"encrypt": "mandatory",
 			"trustServerCertificate": true,
 			"authenticationType": "SQL",
 			"userName": "akila",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJmNTVjYzJkNC0xYjkwLTRkMGItOTk1My1kMTcxNmEyMjE5YmYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4OWI3ZDYyMC0xZTEwLTRlODItYTYwZC1jOWExOTc5NDgwNDUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "akilairadf",
