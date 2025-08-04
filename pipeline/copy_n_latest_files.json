@@ -160,7 +160,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "connecttolocalsql",
+						"referenceName": "SqlServerTable4",
 						"type": "DatasetReference"
 					}
 				}
