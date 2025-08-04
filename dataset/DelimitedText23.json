@@ -19,7 +19,7 @@
 					"value": "@dataset().outputFileName",
 					"type": "Expression"
 				},
-				"fileSystem": "outputlatestfile"
+				"fileSystem": "emptycnt3"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
