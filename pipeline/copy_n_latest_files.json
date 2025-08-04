@@ -115,7 +115,7 @@
 								"source": {
 									"type": "SqlServerSource",
 									"sqlReaderQuery": {
-										"value": "if object_id('dbo.lastthreefiles') is  null create table dbo.lastthreefiles (filename varchar(40), modifiedDate datetime);\ninsert into dbo.lastthreefiles select \n'@{activity('Get Metadata2').output.itemName}', \n'@{formatDateTime(activity('Get Metadata2').output.lastModified,'yyyy-MM-dd HH:mm:ss')}';\nselect 1 as output;\n",
+										"value": "if object_id('dbo.lastthreefiles') is  null create table dbo.lastthreefiles (filename varchar(40), modifiedDate datetime);\ninsert into dbo.lastthreefiles \nselect \n'@{activity('Get Metadata2').output.itemName}', \n'@{formatDateTime(activity('Get Metadata2').output.lastModified,'yyyy-MM-dd HH:mm:ss')}';\nselect 1 as output;\n",
 										"type": "Expression"
 									},
 									"queryTimeout": "02:00:00",
