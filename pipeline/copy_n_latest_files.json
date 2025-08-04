@@ -160,7 +160,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "SqlServerTable4",
+						"referenceName": "SqlServerTable3",
 						"type": "DatasetReference"
 					}
 				}
