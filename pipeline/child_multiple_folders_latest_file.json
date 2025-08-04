@@ -70,7 +70,17 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "DelimitedText26",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"FolderName": {
+											"value": "@pipeline().parameters.FolderNameParam",
+											"type": "Expression"
+										},
+										"FileNAme": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								},
 								"fieldList": [],
 								"storeSettings": {
