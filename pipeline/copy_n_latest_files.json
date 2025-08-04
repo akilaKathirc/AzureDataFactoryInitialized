@@ -107,6 +107,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
+									"sqlReaderQuery": {
+										"value": "if object_id('dbo.lastthreefiles') is null\ncreate table dbo.lastthreefiles (filename varchar(100), modifiedDate varchar(40));\ninsert into dbo.lastthreefiles select ",
+										"type": "Expression"
+									},
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
