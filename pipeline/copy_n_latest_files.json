@@ -224,8 +224,31 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
+								"source": {
+									"type": "DelimitedTextSource",
+									"storeSettings": {
+										"type": "AzureBlobFSReadSettings",
+										"recursive": true,
+										"enablePartitionDiscovery": false
+									},
+									"formatSettings": {
+										"type": "DelimitedTextReadSettings"
+									}
+								},
 								"enableStaging": false
-							}
+							},
+							"inputs": [
+								{
+									"referenceName": "DelimitedText30",
+									"type": "DatasetReference",
+									"parameters": {
+										"FileName": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
+								}
+							]
 						}
 					]
 				}
