@@ -29,6 +29,16 @@
 				"userProperties": []
 			}
 		],
+		"parameters": {
+			"FolderName": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"LatestFile": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
