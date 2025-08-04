@@ -74,7 +74,8 @@
 								"dataset": {
 									"referenceName": "localmssql",
 									"type": "DatasetReference"
-								}
+								},
+								"firstRowOnly": false
 							}
 						}
 					]
