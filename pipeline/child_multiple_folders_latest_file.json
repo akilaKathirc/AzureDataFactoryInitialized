@@ -37,6 +37,10 @@
 		"variables": {
 			"LatestFile": {
 				"type": "String"
+			},
+			"ReferenceDate": {
+				"type": "String",
+				"defaultValue": "1900-01-01 00:00:00"
 			}
 		},
 		"annotations": []
