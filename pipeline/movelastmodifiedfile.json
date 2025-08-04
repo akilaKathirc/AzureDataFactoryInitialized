@@ -1,6 +1,15 @@
 {
 	"name": "movelastmodifiedfile",
 	"properties": {
+		"variables": {
+			"latestfile": {
+				"type": "String"
+			},
+			"refdate": {
+				"type": "String",
+				"defaultValue": "1900-01-01 00"
+			}
+		},
 		"annotations": []
 	}
 }
