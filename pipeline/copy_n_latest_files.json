@@ -64,7 +64,13 @@
 							"typeProperties": {
 								"dataset": {
 									"referenceName": "DelimitedText30",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"FileName": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								},
 								"fieldList": [],
 								"storeSettings": {
