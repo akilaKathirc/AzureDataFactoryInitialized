@@ -180,8 +180,35 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
 					"enableStaging": false
-				}
+				},
+				"inputs": [
+					{
+						"referenceName": "DelimitedText26",
+						"type": "DatasetReference",
+						"parameters": {
+							"FolderName": {
+								"value": "@pipeline().parameters.FolderNameParam",
+								"type": "Expression"
+							},
+							"FileNAme": {
+								"value": "@variables('LatestFile')",
+								"type": "Expression"
+							}
+						}
+					}
+				]
 			}
 		],
 		"parameters": {
