@@ -103,7 +103,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@greater(activity('Get Metadata1').output.lastModified, variables('refdate'))",
+									"value": "@greater(activity('Get Metadata2').output.lastModified, variables('refdate'))",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
