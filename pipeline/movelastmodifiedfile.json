@@ -1,13 +1,28 @@
 {
 	"name": "movelastmodifiedfile",
 	"properties": {
+		"activities": [
+			{
+				"name": "Get Metadata1",
+				"type": "GetMetadata",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
+			}
+		],
 		"variables": {
 			"latestfile": {
 				"type": "String"
 			},
 			"refdate": {
 				"type": "String",
-				"defaultValue": "1900-01-01 00"
+				"defaultValue": "1900-01-01 00:00:00"
 			}
 		},
 		"annotations": []
