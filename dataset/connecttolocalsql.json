@@ -2,7 +2,7 @@
 	"name": "connecttolocalsql",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "SqlServer1",
+			"referenceName": "SqlServer2",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

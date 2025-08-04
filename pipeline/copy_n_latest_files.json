@@ -153,7 +153,7 @@
 					"source": {
 						"type": "SqlServerSource",
 						"sqlReaderQuery": {
-							"value": "select top 3 * from lastthreefiles order by modifiedDate desc;",
+							"value": "select top 3 * from lastthreefiles order by modifiedDate desc;\nselect 1 as output;",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
