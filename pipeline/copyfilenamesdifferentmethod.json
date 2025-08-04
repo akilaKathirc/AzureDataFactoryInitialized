@@ -64,6 +64,10 @@
 							"typeProperties": {
 								"source": {
 									"type": "SqlServerSource",
+									"sqlReaderQuery": {
+										"value": "insert into FileNames values('@{item().name}') ",
+										"type": "Expression"
+									},
 									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
