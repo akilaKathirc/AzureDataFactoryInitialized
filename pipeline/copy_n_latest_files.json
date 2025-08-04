@@ -180,6 +180,10 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
+						"sqlReaderQuery": {
+							"value": "if OBJECT_ID('dbo.lastthreefiles') is not null\ndrop table dbo.lastthreefiles",
+							"type": "Expression"
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
