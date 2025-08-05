@@ -102,7 +102,7 @@
 									{
 										"type": "NonQuery",
 										"text": {
-											"value": "insert into dbo.orderrange select '@{item().OrderID}', '@{variables('arrayvalue')}''",
+											"value": "insert into dbo.orderrange select '@{item().OrderID}', '@{variables('arrayvalue')}'",
 											"type": "Expression"
 										}
 									}
