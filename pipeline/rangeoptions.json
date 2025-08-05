@@ -63,7 +63,7 @@
 							"typeProperties": {
 								"variableName": "arrayvalue",
 								"value": {
-									"value": "@range(split(item().OrderUnits, '..')[0]\r\n, add(sub(split(item().OrderUnits, '..')[1], split(item().OrderUnits, '..')[0]), 1))",
+									"value": "@range(int(split(item().OrderUnits, '..')[0])\n, add(sub(int(split(item().OrderUnits, '..')[1]), int(split(item().OrderUnits, '..')[0])), 1))",
 									"type": "Expression"
 								}
 							}
