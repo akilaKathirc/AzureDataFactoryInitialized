@@ -1,0 +1,31 @@
+{
+	"name": "DelimitedText36",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageacclinkedserviceakila",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "adlsinput"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "orderid",
+				"type": "String"
+			},
+			{
+				"name": "orderrange",
+				"type": "String"
+			}
+		]
+	}
+}
