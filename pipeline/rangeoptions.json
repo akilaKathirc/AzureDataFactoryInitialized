@@ -98,7 +98,7 @@
 						{
 							"type": "NonQuery",
 							"text": {
-								"value": "if object_id(\"dbo.orderrange\") is null\ncreate table dbo.orderrange(orderid int\n, orderrange nvarchar(max));",
+								"value": "if object_id('dbo.orderrange') is null\ncreate table dbo.orderrange(orderid int\n, orderrange nvarchar(max));",
 								"type": "Expression"
 							}
 						}
