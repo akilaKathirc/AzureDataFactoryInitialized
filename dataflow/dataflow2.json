@@ -30,7 +30,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 derive(orderrange = split(replace((replace(orderrange,'[', '')), ']', ''),'\"')) ~> derivedColumn1",
-				"derivedColumn1 foldDown(unroll(),",
+				"derivedColumn1 foldDown(unroll(orderrange),",
 				"     mapColumn(",
 				"          orderid,",
 				"          orderrange",
