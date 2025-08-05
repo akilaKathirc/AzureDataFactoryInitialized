@@ -1,8 +1,16 @@
 {
 	"name": "connecttolocalsql",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "localsql",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "orderrange"
+		}
 	}
 }
