@@ -5,10 +5,6 @@
 		"typeProperties": {
 			"sources": [
 				{
-					"dataset": {
-						"referenceName": "SqlServerTable5",
-						"type": "DatasetReference"
-					},
 					"name": "source1"
 				}
 			],
@@ -19,14 +15,8 @@
 				}
 			],
 			"scriptLines": [
-				"source(output(",
-				"          orderid as integer,",
-				"          orderrange as string",
-				"     ),",
-				"     allowSchemaDrift: false,",
-				"     validateSchema: false,",
-				"     isolationLevel: 'READ_UNCOMMITTED',",
-				"     format: 'table') ~> source1",
+				"source(allowSchemaDrift: false,",
+				"     validateSchema: false) ~> source1",
 				"source1 derive() ~> derivedColumn1"
 			]
 		}
