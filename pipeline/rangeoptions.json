@@ -100,7 +100,7 @@
 							"typeProperties": {
 								"scripts": [
 									{
-										"type": "Query"
+										"type": "NonQuery"
 									}
 								],
 								"scriptBlockExecutionTimeout": "02:00:00"
