@@ -1,0 +1,29 @@
+{
+	"name": "DelimitedText33",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "storageacclinkedserviceakila",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"childfoldername": {
+				"type": "string"
+			},
+			"childfilename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
