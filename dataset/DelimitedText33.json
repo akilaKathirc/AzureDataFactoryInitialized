@@ -8,9 +8,6 @@
 		"parameters": {
 			"childfoldername": {
 				"type": "string"
-			},
-			"childfilename": {
-				"type": "string"
 			}
 		},
 		"annotations": [],

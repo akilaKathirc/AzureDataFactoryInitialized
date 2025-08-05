@@ -30,7 +30,13 @@
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "DelimitedText33",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"childfoldername": {
+								"value": "@pipeline().parameters.filenameforchild",
+								"type": "Expression"
+							}
+						}
 					},
 					"fieldList": [],
 					"storeSettings": {
