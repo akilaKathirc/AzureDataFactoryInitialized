@@ -1,10 +1,6 @@
 {
 	"name": "DelimitedText25",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "storageacclinkedserviceakila",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"FolderName": {
 				"type": "string"

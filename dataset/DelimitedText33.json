@@ -1,10 +1,6 @@
 {
 	"name": "DelimitedText33",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "storageacclinkedserviceakila",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"childfoldername": {
 				"type": "string"
