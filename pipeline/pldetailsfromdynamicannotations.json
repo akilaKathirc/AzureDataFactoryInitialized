@@ -59,7 +59,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"pipeline": {
-									"referenceName": "childpl",
+									"referenceName": "childpldetailsfromdynamicannotations",
 									"type": "PipelineReference"
 								},
 								"waitOnCompletion": true

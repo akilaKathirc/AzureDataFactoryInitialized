@@ -1,0 +1,19 @@
+{
+	"name": "childpldetailsfromdynamicannotations",
+	"properties": {
+		"activities": [
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
+		"parameters": {
+			"filenameforchild": {
+				"type": "string"
+			}
+		},
+		"annotations": []
+	}
+}
