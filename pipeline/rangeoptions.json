@@ -100,7 +100,11 @@
 							"typeProperties": {
 								"scripts": [
 									{
-										"type": "NonQuery"
+										"type": "NonQuery",
+										"text": {
+											"value": "insert into dbo.orderrange select '@{item().OrderID}', '@{variables('arrayvalue')}''",
+											"type": "Expression"
+										}
 									}
 								],
 								"scriptBlockExecutionTimeout": "02:00:00"
