@@ -92,7 +92,11 @@
 				"typeProperties": {
 					"scripts": [
 						{
-							"type": "NonQuery"
+							"type": "NonQuery",
+							"text": {
+								"value": "if object_id(\"dbo.orderrange\") is null\ncreate table dbo.orderrange(orderid int, orderrange nvarchar(max))",
+								"type": "Expression"
+							}
 						}
 					],
 					"scriptBlockExecutionTimeout": "02:00:00"
