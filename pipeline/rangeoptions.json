@@ -125,6 +125,10 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"linkedServiceName": {
+					"referenceName": "localsql",
+					"type": "LinkedServiceReference"
+				},
 				"typeProperties": {
 					"scripts": [
 						{
