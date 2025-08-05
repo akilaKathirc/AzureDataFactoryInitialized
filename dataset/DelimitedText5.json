@@ -1,10 +1,6 @@
 {
 	"name": "DelimitedText5",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "multiplefilesflaggedmove",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"Filename": {
 				"type": "string"

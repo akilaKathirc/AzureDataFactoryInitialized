@@ -1,10 +1,6 @@
 {
 	"name": "DelimitedText3",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "multiplefilesflaggedmove",
-			"type": "LinkedServiceReference"
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

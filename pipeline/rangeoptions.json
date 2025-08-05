@@ -89,18 +89,10 @@
 					"secureInput": false
 				},
 				"userProperties": [],
-				"linkedServiceName": {
-					"referenceName": "SqlServer2",
-					"type": "LinkedServiceReference"
-				},
 				"typeProperties": {
 					"scripts": [
 						{
-							"type": "NonQuery",
-							"text": {
-								"value": "if object_id(\"dbo.orderrange\") is null\ncreate table dbo.orderrange(orderid int, orderrange nvarchar(max))",
-								"type": "Expression"
-							}
+							"type": "NonQuery"
 						}
 					],
 					"scriptBlockExecutionTimeout": "02:00:00"

@@ -1,10 +1,6 @@
 {
 	"name": "DelimitedText7",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "multiplefileFlag",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"fffilename": {
 				"type": "string"

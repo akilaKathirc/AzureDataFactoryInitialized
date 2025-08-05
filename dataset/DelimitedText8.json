@@ -1,10 +1,6 @@
 {
 	"name": "DelimitedText8",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "multiplefileFlag",
-			"type": "LinkedServiceReference"
-		},
 		"parameters": {
 			"outputFileName": {
 				"type": "string"
