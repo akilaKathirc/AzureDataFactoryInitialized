@@ -51,6 +51,7 @@
 				"          orderid as string,",
 				"          orderrange as string",
 				"     ),",
+				"     partitionFileNames:['flattenedrecords.csv'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
