@@ -62,9 +62,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "arrayvalue",
-								"value": [
-									""
-								]
+								"value": {
+									"value": "@range(split(item().OrderUnits, '..')[0]\r\n, add(sub(split(item().OrderUnits, '..')[1], split(item().OrderUnits, '..')[0]), 1))",
+									"type": "Expression"
+								}
 							}
 						}
 					]
