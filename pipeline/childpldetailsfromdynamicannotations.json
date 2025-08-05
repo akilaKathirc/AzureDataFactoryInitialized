@@ -33,7 +33,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"childfoldername": {
-								"value": "@pipeline().parameters.filenameforchild",
+								"value": "@pipeline().parameters.foldernameforchild",
 								"type": "Expression"
 							}
 						}
@@ -50,7 +50,7 @@
 			}
 		],
 		"parameters": {
-			"filenameforchild": {
+			"foldernameforchild": {
 				"type": "string"
 			}
 		},
