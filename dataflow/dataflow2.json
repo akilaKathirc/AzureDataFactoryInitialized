@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "connecttolocalsql",
+						"referenceName": "SqlServerTable5",
 						"type": "DatasetReference"
 					},
 					"name": "source1"
@@ -19,7 +19,11 @@
 				}
 			],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          orderid as integer,",
+				"          orderrange as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     isolationLevel: 'READ_UNCOMMITTED',",
 				"     format: 'table') ~> source1",
