@@ -62,7 +62,13 @@
 									"referenceName": "childpldetailsfromdynamicannotations",
 									"type": "PipelineReference"
 								},
-								"waitOnCompletion": true
+								"waitOnCompletion": true,
+								"parameters": {
+									"foldernameforchild": {
+										"value": "@item().name",
+										"type": "Expression"
+									}
+								}
 							}
 						}
 					]
