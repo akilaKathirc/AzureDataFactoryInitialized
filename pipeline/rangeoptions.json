@@ -32,8 +32,46 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "Lookup1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"activities": [
+						{
+							"name": "Set variable1",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"policy": {
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "arrayvalue",
+								"value": [
+									""
+								]
+							}
+						}
+					]
+				}
 			}
 		],
+		"variables": {
+			"arrayvalue": {
+				"type": "Array"
+			}
+		},
 		"annotations": []
 	}
 }
