@@ -32,7 +32,8 @@
 				"source1 derive(orderrange = split(replace(replace(orderrange, '[', ''),']', ''), ',')) ~> derivedColumn1",
 				"derivedColumn1 foldDown(unroll(orderrange),",
 				"     mapColumn(",
-				"          orderrange = orderrange",
+				"          orderrange = orderrange,",
+				"          orderid",
 				"     ),",
 				"     skipDuplicateMapInputs: false,",
 				"     skipDuplicateMapOutputs: false) ~> flatten1"
