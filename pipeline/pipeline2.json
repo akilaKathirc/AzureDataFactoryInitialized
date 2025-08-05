@@ -9,6 +9,11 @@
 				"userProperties": []
 			}
 		],
+		"parameters": {
+			"refDate": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
