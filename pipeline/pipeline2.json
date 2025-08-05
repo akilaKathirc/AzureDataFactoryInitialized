@@ -6,7 +6,24 @@
 				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@range(0, div(div(sub(ticks(pipeline().parameters.refDate)\r\n, ticks(formatDateTime(utcNow(), 'yyyy-MM-dd'))), 36000000000),24))\r\n\r\n\r\n\r\n",
+						"type": "Expression"
+					},
+					"activities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 1
+							}
+						}
+					]
+				}
 			}
 		],
 		"parameters": {
