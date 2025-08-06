@@ -84,7 +84,7 @@
 				"typeProperties": {
 					"variableName": "ouputarray",
 					"value": {
-						"value": "@createArray(if(empty(variables('leftelement')), '', variables('leftelement'))\n,variables('inputarray')[pipeline().parameters.index2]\n,variables('middleelements')\n,variables('inputarray')[pipeline().parameters.index1]\n,if(empty(variables('rightelement')),'',variables('rightelement')))",
+						"value": "@createArray(if(empty(variables('leftelement')), '', variables('leftelement'))\n,if(empty(variables('inputarray')[pipeline().parameters.index2]),'', variables('inputarray')[pipeline().parameters.index2])\n,if(empty(variables('middleelements')),'',variables('middleelements'))\n,if(empty(variables('inputarray')[pipeline().parameters.index1]),'', variables('inputarray')[pipeline().parameters.index1])\n,if(empty(variables('rightelement')),'',variables('rightelement')))",
 						"type": "Expression"
 					}
 				}
