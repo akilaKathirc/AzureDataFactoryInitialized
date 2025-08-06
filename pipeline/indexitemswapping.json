@@ -3,14 +3,20 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set variable1",
+				"name": "leftElement",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "leftarray",
+					"value": [
+						""
+					]
+				}
 			}
 		],
 		"parameters": {
