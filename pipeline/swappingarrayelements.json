@@ -35,6 +35,16 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "middleelements",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": []
 			}
 		],
 		"parameters": {
@@ -70,6 +80,9 @@
 				"type": "Array"
 			},
 			"rightelement": {
+				"type": "Array"
+			},
+			"middleelements": {
 				"type": "Array"
 			}
 		},
