@@ -88,6 +88,22 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "cleanedoutput",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "cleanedoutput",
+					"value": [
+						""
+					]
+				}
 			}
 		],
 		"parameters": {
@@ -104,12 +120,13 @@
 			"inputarray": {
 				"type": "Array",
 				"defaultValue": [
-					"[54",
-					"32",
-					"68",
-					"43",
-					"69",
-					""
+					54,
+					32,
+					68,
+					43,
+					69,
+					62,
+					71
 				]
 			},
 			"ouputarray": {
