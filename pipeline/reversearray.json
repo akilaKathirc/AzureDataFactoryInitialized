@@ -59,7 +59,15 @@
 					"items": {
 						"value": "@variables('rangeindex')",
 						"type": "Expression"
-					}
+					},
+					"activities": [
+						{
+							"name": "Append variable1",
+							"type": "AppendVariable",
+							"dependsOn": [],
+							"userProperties": []
+						}
+					]
 				}
 			}
 		],
