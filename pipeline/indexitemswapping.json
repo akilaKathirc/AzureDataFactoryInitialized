@@ -13,9 +13,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "leftarray",
-					"value": [
-						""
-					]
+					"value": {
+						"value": "@take(variables('inputarray'),pipeline().parameters.index1)",
+						"type": "Expression"
+					}
 				}
 			}
 		],
