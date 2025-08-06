@@ -23,6 +23,12 @@
 					6,
 					7
 				]
+			},
+			"ouputarray": {
+				"type": "Array"
+			},
+			"cleanedoutput": {
+				"type": "String"
 			}
 		},
 		"annotations": []
