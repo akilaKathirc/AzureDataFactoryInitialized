@@ -124,7 +124,7 @@
 				"type": "Array"
 			},
 			"cleanedoutput": {
-				"type": "String"
+				"type": "Array"
 			}
 		},
 		"annotations": []
