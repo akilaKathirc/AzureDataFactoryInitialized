@@ -11,10 +11,16 @@
 		},
 		"variables": {
 			"inputarray": {
-				"type": "String"
+				"type": "Array"
 			},
 			"outputarray": {
-				"type": "String"
+				"type": "Array"
+			},
+			"leftarray": {
+				"type": "Array"
+			},
+			"rightarray": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
