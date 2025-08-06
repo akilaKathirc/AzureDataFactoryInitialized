@@ -63,19 +63,6 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Append variable1",
-							"type": "AppendVariable",
-							"dependsOn": [],
-							"userProperties": [],
-							"typeProperties": {
-								"variableName": "outputarray",
-								"value": {
-									"value": "@pipeline().parameters.inputarray\n[sub(length(@pipeline().parameters.inputarray))\n    , add(item(), 1))]",
-									"type": "Expression"
-								}
-							}
-						},
-						{
 							"name": "Set variable1",
 							"type": "SetVariable",
 							"dependsOn": [],
@@ -83,7 +70,11 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "arraylength",
+								"value": ""
+							}
 						}
 					]
 				}
