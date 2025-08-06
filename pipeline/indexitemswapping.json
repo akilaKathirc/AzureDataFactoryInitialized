@@ -3,10 +3,12 @@
 	"properties": {
 		"parameters": {
 			"index1": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 2
 			},
 			"index2": {
-				"type": "int"
+				"type": "int",
+				"defaultValue": 3
 			}
 		},
 		"variables": {
