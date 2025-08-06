@@ -70,7 +70,7 @@
 							"typeProperties": {
 								"variableName": "outputarray",
 								"value": {
-									"value": "@pipeline().parameters.inputarray[sub(\r\n    int(variables('arraylength')), add(item().value, 1))]",
+									"value": "@pipeline().parameters.inputarray\n[sub(length(@pipeline().parameters.inputarray))\n    , add(item().value, 1))]",
 									"type": "Expression"
 								}
 							}
