@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "outputarray",
+				"name": "leftarray",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -12,7 +12,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "ouputarray",
+					"variableName": "leftelement",
 					"value": [
 						""
 					]
