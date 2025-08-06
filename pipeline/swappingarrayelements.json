@@ -48,9 +48,44 @@
 				"typeProperties": {
 					"variableName": "middleelements",
 					"value": {
-						"value": "@substring(string(variables('inputarray')), pipeline().parameters.index1,pipeline().parameters.index2)",
+						"value": "@json(substring(string(variables('inputarray')), pipeline().parameters.index1,pipeline().parameters.index2))",
 						"type": "Expression"
 					}
+				}
+			},
+			{
+				"name": "outputarray",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "leftarray",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "rightarray",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					},
+					{
+						"activity": "middleelements",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ouputarray",
+					"value": [
+						""
+					]
 				}
 			}
 		],
