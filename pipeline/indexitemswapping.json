@@ -18,6 +18,23 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "rightelement",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "rightarray",
+					"value": {
+						"value": "@skip(variables('inputarray'),pipeline().parameters.index2)",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
