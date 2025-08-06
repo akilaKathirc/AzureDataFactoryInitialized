@@ -27,7 +27,13 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "rangeindex",
+					"value": [
+						""
+					]
+				}
 			}
 		],
 		"parameters": {
@@ -44,6 +50,9 @@
 		"variables": {
 			"arraylength": {
 				"type": "String"
+			},
+			"rangeindex": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
