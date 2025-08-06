@@ -100,9 +100,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "cleanedoutput",
-					"value": [
-						""
-					]
+					"value": {
+						"value": "@json(concat('[',replace(replace(string(variables('ouputarray')), '[','' ),']',''),']'))",
+						"type": "Expression"
+					}
 				}
 			}
 		],
