@@ -57,7 +57,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@pipeline().parameters.inputarray",
+						"value": "@variables('rangeindex')",
 						"type": "Expression"
 					},
 					"isSequential": true,
