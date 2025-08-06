@@ -47,6 +47,12 @@
 			},
 			"cleanedoutput": {
 				"type": "Array"
+			},
+			"leftelement": {
+				"type": "Array"
+			},
+			"rightelement": {
+				"type": "Array"
 			}
 		},
 		"annotations": []
