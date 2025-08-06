@@ -83,7 +83,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "outputarray",
+					"variableName": "cleanedoutput",
 					"value": {
 						"value": "@replace(replace(string(variables('outputarray')),'[',''), ']', '')",
 						"type": "Expression"
@@ -122,6 +122,9 @@
 			},
 			"rightarray": {
 				"type": "Array"
+			},
+			"cleanedoutput": {
+				"type": "String"
 			}
 		},
 		"annotations": []
