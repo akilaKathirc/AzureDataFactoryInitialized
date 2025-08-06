@@ -1,6 +1,22 @@
 {
 	"name": "indexitemswapping",
 	"properties": {
+		"parameters": {
+			"index1": {
+				"type": "int"
+			},
+			"index2": {
+				"type": "int"
+			}
+		},
+		"variables": {
+			"inputarray": {
+				"type": "String"
+			},
+			"outputarray": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }
