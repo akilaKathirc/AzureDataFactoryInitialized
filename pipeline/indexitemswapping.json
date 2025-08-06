@@ -65,6 +65,29 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "cleanedarray",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "outputArray",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "outputarray",
+					"value": [
+						""
+					]
+				}
 			}
 		],
 		"parameters": {
