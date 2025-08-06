@@ -1,6 +1,22 @@
 {
 	"name": "reversearray",
 	"properties": {
+		"activities": [
+			{
+				"name": "lengtharray",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "arraylength",
+					"value": ""
+				}
+			}
+		],
 		"parameters": {
 			"inputarray": {
 				"type": "array",
@@ -10,6 +26,11 @@
 					"c",
 					"d"
 				]
+			}
+		},
+		"variables": {
+			"arraylength": {
+				"type": "String"
 			}
 		},
 		"annotations": []
