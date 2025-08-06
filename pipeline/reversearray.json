@@ -1,0 +1,17 @@
+{
+	"name": "reversearray",
+	"properties": {
+		"parameters": {
+			"inputarray": {
+				"type": "array",
+				"defaultValue": [
+					"a",
+					"b",
+					"c",
+					"d"
+				]
+			}
+		},
+		"annotations": []
+	}
+}
