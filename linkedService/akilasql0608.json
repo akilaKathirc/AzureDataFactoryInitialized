@@ -1,0 +1,21 @@
+{
+	"name": "akilasql0608",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "CHENG\\SQLEXPRESS",
+			"database": "netflix",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "akila",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJkNmQ5NjIxNy1kZmZkLTQwM2QtOTRiNy03MTY3ZDI2MGFiMzgiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "akilairadf",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
