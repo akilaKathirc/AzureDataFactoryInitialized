@@ -104,13 +104,12 @@
 			"inputarray": {
 				"type": "Array",
 				"defaultValue": [
-					1,
-					2,
-					3,
-					4,
-					5,
-					6,
-					7
+					"[54",
+					"32",
+					"68",
+					"43",
+					"69",
+					""
 				]
 			},
 			"ouputarray": {
