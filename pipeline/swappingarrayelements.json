@@ -30,9 +30,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "rightelement",
-					"value": [
-						""
-					]
+					"value": {
+						"value": "@skip(variables('inputarray'),pipeline().parameters.index2)",
+						"type": "Expression"
+					}
 				}
 			}
 		],
