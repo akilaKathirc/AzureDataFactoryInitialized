@@ -44,7 +44,13 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "middleelements",
+					"value": [
+						""
+					]
+				}
 			}
 		],
 		"parameters": {
