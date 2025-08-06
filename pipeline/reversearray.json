@@ -60,6 +60,7 @@
 						"value": "@variables('rangeindex')",
 						"type": "Expression"
 					},
+					"isSequential": true,
 					"activities": [
 						{
 							"name": "Append variable1",
