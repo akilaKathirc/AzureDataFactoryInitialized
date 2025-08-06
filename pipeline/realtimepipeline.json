@@ -42,7 +42,13 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('look for all tables').output.value",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
