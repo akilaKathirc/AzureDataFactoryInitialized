@@ -14,7 +14,7 @@
 				"typeProperties": {
 					"variableName": "arraylength",
 					"value": {
-						"value": "@length(pipeline().parameters.inputarray)",
+						"value": "@string(length(pipeline().parameters.inputarray))",
 						"type": "Expression"
 					}
 				}
