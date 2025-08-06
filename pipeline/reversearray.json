@@ -54,7 +54,13 @@
 						]
 					}
 				],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@variables('rangeindex')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
