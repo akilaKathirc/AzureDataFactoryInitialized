@@ -79,14 +79,25 @@
 				}
 			},
 			{
-				"name": "Set variable1",
+				"name": "output",
 				"type": "SetVariable",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "ForEach1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "newoutput",
+					"value": ""
+				}
 			}
 		],
 		"parameters": {
