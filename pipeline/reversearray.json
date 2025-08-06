@@ -73,7 +73,10 @@
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "arraylength",
-								"value": ""
+								"value": {
+									"value": "@string(length(item()))",
+									"type": "Expression"
+								}
 							}
 						}
 					]
