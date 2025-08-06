@@ -21,7 +21,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "SqlServerTable6",
+						"referenceName": "SqlServerTable7",
 						"type": "DatasetReference"
 					}
 				}

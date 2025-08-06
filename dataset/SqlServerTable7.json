@@ -1,0 +1,12 @@
+{
+	"name": "SqlServerTable7",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "akilasql0608",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
