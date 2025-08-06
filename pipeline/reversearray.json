@@ -22,7 +22,14 @@
 			{
 				"name": "RangeofIndex",
 				"type": "SetVariable",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "lengtharray",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
@@ -35,6 +42,19 @@
 						"type": "Expression"
 					}
 				}
+			},
+			{
+				"name": "ForEach1",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "RangeofIndex",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": []
 			}
 		],
 		"parameters": {
