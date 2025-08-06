@@ -13,6 +13,23 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "leftelement",
+					"value": {
+						"value": "@take(variables('inputarray'),pipeline().parameters.index1)",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "rightarray",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "rightelement",
 					"value": [
 						""
 					]
