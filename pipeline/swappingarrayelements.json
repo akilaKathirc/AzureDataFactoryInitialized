@@ -48,7 +48,7 @@
 				"typeProperties": {
 					"variableName": "middleelements",
 					"value": {
-						"value": "@take(skip(variables('inputarray'),add(pipeline().parameters.index1,1)),sub(pipeline().parameters.index2, 1))",
+						"value": "@take(skip(variables('inputarray'),add(pipeline().parameters.index1,1)),sub(pipeline().parameters.index2, add(pipeline().parameters.index1,1)))",
 						"type": "Expression"
 					}
 				}
