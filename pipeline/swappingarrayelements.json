@@ -83,9 +83,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "ouputarray",
-					"value": [
-						""
-					]
+					"value": {
+						"value": "@concat(variables('leftelement'),pipeline().parameters.index2,variables('middleelements'),pipeline().parameters.index1,variables('rightelement'))",
+						"type": "Expression"
+					}
 				}
 			}
 		],
