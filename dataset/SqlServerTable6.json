@@ -2,7 +2,7 @@
 	"name": "SqlServerTable6",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "localsql",
+			"referenceName": "akilasql0608",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
