@@ -1,6 +1,24 @@
 {
 	"name": "swappingarrayelements",
 	"properties": {
+		"activities": [
+			{
+				"name": "outputarray",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "ouputarray",
+					"value": [
+						""
+					]
+				}
+			}
+		],
 		"parameters": {
 			"index1": {
 				"type": "int",
@@ -28,7 +46,7 @@
 				"type": "Array"
 			},
 			"cleanedoutput": {
-				"type": "String"
+				"type": "Array"
 			}
 		},
 		"annotations": []
