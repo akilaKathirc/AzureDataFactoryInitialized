@@ -84,7 +84,7 @@
 				"typeProperties": {
 					"variableName": "ouputarray",
 					"value": {
-						"value": "@concat(variables('leftelement'),pipeline().parameters.index2,variables('middleelements'),pipeline().parameters.index1,variables('rightelement'))",
+						"value": "@createArray(variables('leftelement'),pipeline().parameters.index2,variables('middleelements'),pipeline().parameters.index1,variables('rightelement'))",
 						"type": "Expression"
 					}
 				}
