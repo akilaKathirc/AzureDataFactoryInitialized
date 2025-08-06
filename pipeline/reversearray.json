@@ -96,7 +96,10 @@
 				"userProperties": [],
 				"typeProperties": {
 					"variableName": "newoutput",
-					"value": ""
+					"value": {
+						"value": "@variables('outputarray')",
+						"type": "Expression"
+					}
 				}
 			}
 		],
