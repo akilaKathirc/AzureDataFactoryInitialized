@@ -92,7 +92,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SqlServerTable13",
+									"referenceName": "SqlServerTable15",
 									"type": "DatasetReference"
 								}
 							],
