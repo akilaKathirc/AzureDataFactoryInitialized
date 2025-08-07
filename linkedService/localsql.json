@@ -1,0 +1,21 @@
+{
+	"name": "localsql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "CHENG, 1433",
+			"database": "netflix",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "akila",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0ZjU0OTgyNi0yZmFmLTRjN2MtYWE1ZS01OTEyZThhOTgxNzciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "akilairadf",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
