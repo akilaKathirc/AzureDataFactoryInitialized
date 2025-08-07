@@ -1,6 +1,10 @@
 {
 	"name": "connecttolocalsql",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "localsql",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": [],

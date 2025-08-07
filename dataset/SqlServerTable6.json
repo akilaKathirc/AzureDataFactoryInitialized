@@ -1,6 +1,10 @@
 {
 	"name": "SqlServerTable6",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "akilasql0608",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "SqlServerTable",
 		"schema": []
