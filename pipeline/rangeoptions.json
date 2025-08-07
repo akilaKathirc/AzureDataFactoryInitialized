@@ -94,10 +94,6 @@
 								"secureInput": false
 							},
 							"userProperties": [],
-							"linkedServiceName": {
-								"referenceName": "SqlServer2",
-								"type": "LinkedServiceReference"
-							},
 							"typeProperties": {
 								"scripts": [
 									{
@@ -126,10 +122,6 @@
 					"secureInput": false
 				},
 				"userProperties": [],
-				"linkedServiceName": {
-					"referenceName": "localsql",
-					"type": "LinkedServiceReference"
-				},
 				"typeProperties": {
 					"scripts": [
 						{
