@@ -25,7 +25,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "SqlServerTable8",
+						"referenceName": "SqlServerTable12",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -92,7 +92,7 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "SqlServercopy",
+									"referenceName": "SqlServerTable13",
 									"type": "DatasetReference"
 								}
 							],

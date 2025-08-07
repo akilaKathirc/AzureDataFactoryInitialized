@@ -1,8 +1,8 @@
 {
-	"name": "SqlServerTable8",
+	"name": "SqlServerTable12",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "akilalocalsql",
+			"referenceName": "akilalocal07",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

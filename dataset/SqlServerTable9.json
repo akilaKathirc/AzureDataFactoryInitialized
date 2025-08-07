@@ -1,5 +1,5 @@
 {
-	"name": "SqlServerTable8",
+	"name": "SqlServerTable9",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "akilalocalsql",
