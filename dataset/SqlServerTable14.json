@@ -2,7 +2,7 @@
 	"name": "SqlServerTable14",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "SqlServer1",
+			"referenceName": "SqlServer3",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
